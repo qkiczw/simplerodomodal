@@ -1,2 +1,2 @@
 # simplerodomodal
-Simple RODO MODAL
+Simple RODO MODAL with vanilaJS

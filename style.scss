@@ -1,0 +1,89 @@
+$header-color: #015d92;
+$rodo-btn-color: #015d92;
+$site-content-color: #dbdada; 
+$rodo-section-bg-color: #ffffff;
+$rodo-modal-bg-color: #ffffff;
+$header-font-color: #ffffff;
+$content-font-color: #383838;
+$button-hover-color:#033e61;
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    color: $content-font-color;
+    h1{
+        background-color: $header-color;
+        color: $header-font-color;
+    }
+    .site-content{
+        background-color: $site-content-color;
+    }
+}
+.rodo-section{
+    font-family: Arial, Helvetica, sans-serif;
+    color: $content-font-color;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    .rodo-modal-background{
+        background-color: $rodo-section-bg-color;
+        position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 100%;
+        height: 100vh;
+        filter: blur(4px);
+        opacity: 0.7;
+        z-index: -100;
+    }
+    .rodo-modal{
+        font-family: Arial, Helvetica, sans-serif;
+        color: $content-font-color;
+        background-color: $rodo-modal-bg-color;
+        border: 1px solid $content-font-color;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px $content-font-color;
+        z-index: -99;
+        max-width: 90%;
+        color: $content-font-color;
+        h1{
+            background-color: $header-color;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: $header-font-color;
+            padding: 1% 2%;
+
+        }
+        .rodo-buttons{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 2%;
+            button{
+                border: 1px solid $button-hover-color;
+                border-radius: 5px;
+                background-color: $header-color;
+                padding: 5px 10px;
+                margin: 10px;
+                font-weight: bold;
+                color: $header-font-color;
+                text-transform: uppercase;
+                cursor: pointer;
+                outline: none;
+            &:hover {
+                background-color: $button-hover-color;
+                }
+            }
+        }
+        
+    }
+}
+.hidden{
+    display: none;
+}
+
